@@ -15,6 +15,8 @@ class LargestNumber{
     }
    }
 }
+OUTPUT:
+The greatest number is: 30
 
 #Calculator
 import java.util.*;
@@ -50,5 +52,48 @@ class Calculator {
  
    }
 }
+OUTPUT:
+Enter 2 numbers:
+23 12
+Enter the Operator(*,-,+,/):
++
+The Final result:
+
+23.0 + 12.0 = 35.0
+
 #Palindrom
+import java.util.*;
+class Palindrom {
+    static double reverseNumber(double n){
+        double reverse=0;
+        while(n>0){
+            reverse=reverse*10+n%10;
+            n=n/10;
+        }
+        return reverse;
+    }
+    public static void main(String[] args) {
+        double n;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a numbers:" );
+        n= sc.nextDouble();
+        //int n=12321;
+        double reverseN=reverseNumber(n);
+        System.out.println("Reverse of number="
+        +reverseN);
+        if(n==reverseN)
+        System.out.println("Palindrom");
+        else
+        System.out.println(" Not a Palindrom");
+      
+    }
+}
+
+OUTPUT:
+Enter a numbers:
+12345678987654321
+Reverse of number=Infinity
+ Not a Palindrom
+
+
 #Fibonacci series
