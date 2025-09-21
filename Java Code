@@ -1,4 +1,54 @@
-Code for Find the largest of 3 number:
-Calculator
-Palindrom
-Fibonacci series
+#Code for Find the largest of 3 number:
+class LargestNumber{
+   public static void main(String[] args){
+    int a=10;
+    int b=20;
+    int c=30;
+    if (a>b && a>c){
+      System.out.println("The greatest number is:" +a);
+    }
+    else if(b>a && b>c){
+      System.out.println("The greatest number is:" +b);
+    }
+    else{
+      System.out.println("The greatest number is:" +c);
+    }
+   }
+}
+
+#Calculator
+import java.util.*;
+class Calculator {
+   public static void main(String[] args){
+       double num1; double num2;
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter 2 numbers:" );
+       num1= sc.nextDouble();
+       num2= sc.nextDouble();
+       
+       System.out.println("Enter the Operator(*,-,+,/):");
+       char op=sc.next().charAt(0);
+       double Total=0;
+       
+       switch(op){
+           case '+': Total=num1+num2;
+           break;
+           case '-': Total=num1-num2;
+           break;
+           case '*': Total=num1*num2;
+           break;
+           case '/': Total=num1/num2;
+           break;
+         
+           default:
+           System.out.println("You enter a wrong input");
+        }
+           System.out.println("The Final result:");
+           System.out.println();
+           System.out.println(num1 + " "+ op +" "+num2 + " = "+ Total);
+       
+ 
+   }
+}
+#Palindrom
+#Fibonacci series
